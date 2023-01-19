@@ -1,0 +1,6 @@
+slug: airtable_get_employees
+name: Get Employees from Airtable
+
+node:
+  entrypoint: airtableGetEmployees.js
+  nodeVersion: "18"

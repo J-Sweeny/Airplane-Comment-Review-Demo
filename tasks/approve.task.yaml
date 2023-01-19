@@ -1,0 +1,14 @@
+slug: approve
+name: "Approve"
+description: Update comment approval to true
+
+parameters:
+  - slug: id
+    name: Comment ID
+    type: integer
+
+sql:
+  resource: "blog_comments"
+  entrypoint: approve.sql
+  queryArgs:
+    id: "{{params.id}}"

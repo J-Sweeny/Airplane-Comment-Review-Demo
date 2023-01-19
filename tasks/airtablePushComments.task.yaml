@@ -1,0 +1,26 @@
+slug: airtable_push_comments
+name: Push Vetted Comments to Airtable
+
+parameters:
+  - slug: id
+    name: ID
+    type: integer
+  - slug: comment_text
+    name: Comment Text
+    type: longtext
+  - slug: username
+    name: Username
+    type: shorttext
+  - slug: inserted_at
+    name: Date
+    type: datetime
+  - slug: approved
+    name: Approved
+    type: boolean
+  - slug: mod
+    name: Mod
+    type: shorttext
+
+node:
+  entrypoint: airtablePushComments.js
+  nodeVersion: "18"

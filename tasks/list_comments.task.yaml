@@ -1,0 +1,7 @@
+slug: list_comments
+name: "List Comments"
+description: List all comments
+
+sql:
+  resource: "blog_comments"
+  entrypoint: list_comments.sql

@@ -1,0 +1,14 @@
+slug: deny_approval
+name: "Deny Approval"
+description: Update comment approval to false
+
+parameters:
+  - slug: id
+    name: Comment ID
+    type: integer
+
+sql:
+  resource: "blog_comments"
+  entrypoint: deny_approval.sql
+  queryArgs:
+    id: "{{params.id}}"
